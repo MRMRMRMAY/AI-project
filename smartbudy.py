@@ -1,7 +1,6 @@
 # Proof-of-concept
 import cv2
 import sys
-import gui
 from constants import *
 from emotion_recognition import EmotionRecognition
 import numpy as np
