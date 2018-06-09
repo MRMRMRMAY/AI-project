@@ -14,7 +14,7 @@ The data is in CSV and we need to transform it using the script "csv_to_numpy.py
  
 Please install "AVbin10-win64".
 
-#Usage :
+# Usage :
 	
 	To train a model, using "emotion_recognition.py" . The command is 'python3 emotion_recognition.py train".
 	
