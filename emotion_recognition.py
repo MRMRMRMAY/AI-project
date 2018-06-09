@@ -29,7 +29,7 @@ class EmotionRecognition:
         '''
 
         '''
-        [-]input_data()
+        [-]input layer
         #This layer is use for inputting data to a network.
         #List of int, to create a new placeholder
         # shape = [batch, height, width, in_channels]
@@ -39,12 +39,12 @@ class EmotionRecognition:
         '''
         [-]conv_2d
         #arg1 - incoming: [batch, height, width, in_channels]
-        #arg2 - nb_filter: The number of convolution filters
-        #arg3 - filter_size : Size of filters
+        #arg2 - nb_filter: The number oft convolution filters
+        #arg3 - filter_size( kernel size ) : Size of filters
+        #strides - default : 1
         '''
         self.network = conv_2d(self.network, 64, 5, activation='relu') # 1st layer
         #self.network = local_response_normalization(self.network) #
-
         '''
         [-]max pooling 2D
         
@@ -53,8 +53,10 @@ class EmotionRecognition:
         # arg3 - strides : stides of conv operation  e.g,(0,0)->(0,2)->(0,4)
         '''
         self.network = max_pool_2d(self.network, 3, strides=2) # pool
+
         self.network = conv_2d(self.network, 64, 5, activation='relu') # 2nd layer
         self.network = max_pool_2d(self.network, 3, strides=2) # pool
+
         self.network = conv_2d(self.network, 128, 4, activation='relu') # 3rd layer
         '''
         [-]Dropout

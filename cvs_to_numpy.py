@@ -16,7 +16,7 @@ def format_image(image):
         image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     else:
         image = cv2.imdecode(image, cv2.CV_LOAD_IMAGE_GRAYSCALE)
-    
+
     gray_border = np.zeros((150, 150), np.uint8)
     gray_border[:, :] = 200
     gray_border[

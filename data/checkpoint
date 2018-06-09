@@ -1,0 +1,2 @@
+model_checkpoint_path: "F:\\2018 first\\Artificial Intelligence\\project\\emotion-recognition-neural-networks-master\\emotion-recognition-neural-networks-master\\data\\Gudi_model_10_epochs_2000_faces"
+all_model_checkpoint_paths: "F:\\2018 first\\Artificial Intelligence\\project\\emotion-recognition-neural-networks-master\\emotion-recognition-neural-networks-master\\data\\Gudi_model_10_epochs_2000_faces"
