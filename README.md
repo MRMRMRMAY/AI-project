@@ -1,8 +1,10 @@
 # AI-project
 Python Edition: 3.6.5
 
-Please open cmd and move to the project folder, then type the command "pip install -r requirements.txt".
-
+Please open cmd and move to the project folder, then type the command 
+	"pip install -r requirements.txt".
+Please install the libary pyglet by the following command or by pycharm.
+	"pip install pyglet"
 Please download and decompress the following files from the  "Data.zip" into the folder¡°data".
 	
 	"Gudi_model_10_epochs_2000_faces.data-00000-of-00001"
